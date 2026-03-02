@@ -1,0 +1,11 @@
+Agent: Thank you for calling Clara Plumbing and Heating. How can I help you today?
+Caller: Yes, hello, I'm calling because I have a serious issue at my office building. Water is coming up through the floorboards in the lobby.
+Agent: Oh, no. I am so sorry to hear that. Any active flooding or water visibly pooling in living or commercial spaces is absolutely considered a plumbing emergency. Please hold for one second; I am going to transfer you directly to our lead on-call emergency dispatch technician right now so they can get a crew routed to you immediately.
+Caller: Thank you, thank you, please hurry.
+Agent: Of course.
+[Call transferred to Technician queue] 
+Technician: Hello, Clara emergency dispatch. Are you in a safe location away from the water right now?
+Caller: Yes, I am. We just need someone here. Do you guys operate 24 hours?
+Technician: Ordinarily, our standard business hours are Monday through Friday, 8:00 AM to 5:00 PM. But we always keep a skeleton crew on call for after-hours and weekend emergencies like yours. Are you the property owner?
+Caller: Yes, I am the owner of the building.
+Technician: Great. I'll get someone rolling right now. What is the address?
