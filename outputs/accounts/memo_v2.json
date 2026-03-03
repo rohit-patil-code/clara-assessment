@@ -2,8 +2,8 @@
   "type": "object",
   "account_id": "clara-plumbing-and-heating",
   "company_name": "Clara Plumbing and Heating",
-  "business_hours": "Monday through Friday, 8:00 AM to 5:00 PM (EST)",
-  "office_address": null,
+  "business_hours": "Monday-Friday 8:00 AM to 5:00 PM CST",
+  "office_address": "123 Main Street, Suite 400, Chicago, Illinois",
   "services_supported": [
     "plumbing",
     "heating"
@@ -14,8 +14,8 @@
   ],
   "emergency_routing_rules": "Transfer caller directly to lead on-call emergency dispatch technician for immediate assistance.",
   "non_emergency_routing_rules": null,
-  "call_transfer_rules": null,
-  "integration_constraints": null,
+  "call_transfer_rules": "30-second timeout. Fallback: 'I am paging our backup emergency team right now, and someone will call you back within 10 minutes.'",
+  "integration_constraints": "No non-emergency job tickets in ServiceTitan for standard maintenance calls made after hours. Log details as customer notes for morning dispatch team.",
   "after_hours_flow_summary": "A skeleton crew handles on-call emergencies outside standard business hours.",
   "office_hours_flow_summary": null,
   "questions_or_unknowns": [],

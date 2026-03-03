@@ -1,0 +1,9 @@
+Clara Specialist: Hi, thanks for taking the time for your onboarding call! During the demo, we saw how the agent handled that lobby flooding scenario. Today, we need to lock in your exact configuration before we push the agent live.
+Client: Sounds good. Let's do it.
+Clara Specialist: First, I have your business hours as Monday through Friday, 8:00 AM to 5:00 PM. What time zone is that, and can I get your primary office address?
+Client: We are on Central Standard Time (CST). The office address is 123 Main Street, Suite 400, Chicago, Illinois.
+Clara Specialist: Perfect, I've got that down. Now, regarding your software, I see we didn't discuss integration constraints earlier. Are you using ServiceTrade or ServiceTitan?
+Client: We use ServiceTitan. One strict rule: the AI should never create a new job ticket in ServiceTitan for non-emergency standard maintenance if they call after hours. It should just log the details as a customer note for the morning dispatch team. Only create active job tickets for actual emergencies like the active flooding we discussed.
+Clara Specialist: Understood, no non-emergency tickets in ServiceTitan after hours. Finally, for emergency call transfers: if the AI tries to transfer an emergency caller to your on-call technician and they don't answer, how long should it wait?
+Client: Give it a 30-second timeout. If the tech doesn't answer after 30 seconds, the fallback should be to tell the caller: "I am paging our backup emergency team right now, and someone will call you back within 10 minutes."
+Clara Specialist: Got it. 30-second timeout and a 10-minute callback assurance. That should give us everything we need to build version 2 of your agent!
