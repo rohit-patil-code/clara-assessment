@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # The n8n orchestration application
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=0.0.0.0
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - NODE_ENV=production
+      - NODES_EXCLUDE=[]
+      # Prevents analytics tracking on open-source instances
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - N8N_METRICS=true
+    volumes:
+      # Mount specific workflow configuration logic to persist workflows
+      - n8n_data:/home/node/.n8n
+      # Map the exact local pipeline folders directly into the orchestrator runner
+      - ./inputs:/home/node/inputs
+      - ./outputs:/home/node/outputs
+      - ./scripts:/home/node/scripts
+      - ./.env:/home/node/.env
+    restart: always
+
+volumes:
+  n8n_data:

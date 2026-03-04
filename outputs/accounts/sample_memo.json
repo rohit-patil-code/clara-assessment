@@ -5,19 +5,20 @@
   "business_hours": "Monday through Friday, 8:00 AM to 5:00 PM (EST)",
   "office_address": null,
   "services_supported": [
-    "plumbing",
-    "heating"
+    "Plumbing"
   ],
   "emergency_definition": [
-    "serious issue at commercial spaces",
-    "active flooding or water visibly pooling"
+    "Active flooding or water visibly pooling in living or commercial spaces"
   ],
-  "emergency_routing_rules": "Transfer caller directly to lead on-call emergency dispatch technician for immediate assistance.",
-  "non_emergency_routing_rules": null,
-  "call_transfer_rules": null,
+  "emergency_routing_rules": "All emergency calls are transferred directly to the lead on-call emergency dispatch technician. Fallback to other technicians if necessary",
+  "non_emergency_routing_rules": "None explicitly stated, but standard calls likely go to regular technicians or customer service",
+  "call_transfer_rules": "Calls are transferred after one-minute hold for emergency situations. Otherwise, flow might be dependent on dispatch protocols, which are not explicitly mentioned in the transcript",
   "integration_constraints": null,
-  "after_hours_flow_summary": "A skeleton crew handles on-call emergencies outside standard business hours.",
-  "office_hours_flow_summary": null,
-  "questions_or_unknowns": [],
-  "notes": null
+  "After_hours_flow_summary": "Emergency skeleton crew is available 24/7, with Monday through Friday, 8:00 AM to 5:00 PM service being standard business hours, and other times being under skeleton crew",
+  "Office_hours_flow_summary": "Standard calls and emergency calls are routed through dispatch, otherwise standard business hours with 8:00 AM to 5:00 PM availability",
+  "questions_or_unknowns": [
+    "Business service hours beyond emergency times not specified",
+    "Specific CRM or software rules not provided"
+  ],
+  "notes": "Plumbing and emergency services available with after-hours skeleton crew"
 }

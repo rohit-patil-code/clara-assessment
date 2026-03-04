@@ -1,0 +1,79 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "c993d5d4-1f2c-4e8b-9e88-6c3c476724a3",
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        -16
+      ]
+    },
+    {
+      "parameters": {
+        "command": "node /home/node/scripts/extract_memo.js"
+      },
+      "id": "b5f5c872-69ef-4bc4-b21e-edf9571ea86e",
+      "name": "Phase 1: Process Demo Calls",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        144,
+        -16
+      ]
+    },
+    {
+      "parameters": {
+        "command": "node /home/node/scripts/apply_onboarding_updates.js"
+      },
+      "id": "62600902-3fe3-43e2-b207-a37d0fbfd942",
+      "name": "Phase 2: Process Onboarding",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        368,
+        -16
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking \"Execute Workflow\"": {
+      "main": [
+        [
+          {
+            "node": "Phase 1: Process Demo Calls",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Phase 1: Process Demo Calls": {
+      "main": [
+        [
+          {
+            "node": "Phase 2: Process Onboarding",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "3f7db157-1b98-431e-8ca1-990510b61315",
+  "meta": {
+    "instanceId": "aa1cca8ef0d5ac4e1f1e6b305118a543b40badb298cae6a0391b6a1b0c1a25b1"
+  },
+  "id": "0wR7nKHyljPvCi5H",
+  "tags": []
+}
